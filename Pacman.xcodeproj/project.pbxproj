@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6A07CE0A19B80610002A60A3 /* AOMovable.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A07CE0919B80610002A60A3 /* AOMovable.m */; };
+		6A07CE0D19B80942002A60A3 /* AOGhostNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A07CE0C19B80942002A60A3 /* AOGhostNode.m */; };
+		6AF028B819AE873900B0DA01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AF028B719AE873900B0DA01 /* Foundation.framework */; };
+		6AF028BA19AE873900B0DA01 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AF028B919AE873900B0DA01 /* CoreGraphics.framework */; };
+		6AF028BC19AE873900B0DA01 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AF028BB19AE873900B0DA01 /* UIKit.framework */; };
+		6AF028BE19AE873900B0DA01 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AF028BD19AE873900B0DA01 /* SpriteKit.framework */; };
+		6AF028C419AE873900B0DA01 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6AF028C219AE873900B0DA01 /* InfoPlist.strings */; };
+		6AF028C619AE873900B0DA01 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF028C519AE873900B0DA01 /* main.m */; };
+		6AF028CA19AE873900B0DA01 /* AOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF028C919AE873900B0DA01 /* AOAppDelegate.m */; };
+		6AF028CD19AE873900B0DA01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AF028CB19AE873900B0DA01 /* Main.storyboard */; };
+		6AF028D019AE873900B0DA01 /* AOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF028CF19AE873900B0DA01 /* AOViewController.m */; };
+		6AF028D319AE873900B0DA01 /* AOMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF028D219AE873900B0DA01 /* AOMyScene.m */; };
+		6AF028D719AE873900B0DA01 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AF028D619AE873900B0DA01 /* Images.xcassets */; };
+		6AF028DE19AE873900B0DA01 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AF028DD19AE873900B0DA01 /* XCTest.framework */; };
+		6AF028DF19AE873900B0DA01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AF028B719AE873900B0DA01 /* Foundation.framework */; };
+		6AF028E019AE873900B0DA01 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AF028BB19AE873900B0DA01 /* UIKit.framework */; };
+		6AF028E819AE873900B0DA01 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6AF028E619AE873900B0DA01 /* InfoPlist.strings */; };
+		6AF028EA19AE873900B0DA01 /* PacmanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF028E919AE873900B0DA01 /* PacmanTests.m */; };
+		6AF0293D19B2805E00B0DA01 /* AOControlNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF0293C19B2805E00B0DA01 /* AOControlNode.m */; };
+		6AF0294019B28F4A00B0DA01 /* AOPacmanNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF0293F19B28F4A00B0DA01 /* AOPacmanNode.m */; };
+		6AF0294319B2938000B0DA01 /* AOLabyrinthNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF0294219B2938000B0DA01 /* AOLabyrinthNode.m */; };
+		6AF0294919B2BC9200B0DA01 /* pacman_chomp.caf in Resources */ = {isa = PBXBuildFile; fileRef = 6AF0294819B2BC9200B0DA01 /* pacman_chomp.caf */; };
+		6AF0294C19B3A91F00B0DA01 /* AOUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF0294B19B3A91F00B0DA01 /* AOUtil.m */; };
+		6AF0294E19B3A9ED00B0DA01 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AF0294D19B3A9ED00B0DA01 /* AVFoundation.framework */; };
+		6AF0295019B3AD8E00B0DA01 /* pacman_chomp.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6AF0294F19B3AD8E00B0DA01 /* pacman_chomp.wav */; };
+		6AF0295319B3B08F00B0DA01 /* Joystix.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 6AF0295219B3B08F00B0DA01 /* Joystix.TTF */; };
+		6AF0295519B3B4E600B0DA01 /* PacmanSiren.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AF0295419B3B4E600B0DA01 /* PacmanSiren.mp3 */; };
+		6AF0295719B3B6B500B0DA01 /* PacmanSiren2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AF0295619B3B6B500B0DA01 /* PacmanSiren2.mp3 */; };
+		6AF0295919B3B72600B0DA01 /* PacmanSiren3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AF0295819B3B72600B0DA01 /* PacmanSiren3.mp3 */; };
+		6AF0295B19B3B7A400B0DA01 /* PacmanSiren4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AF0295A19B3B7A400B0DA01 /* PacmanSiren4.mp3 */; };
+		6AF0295D19B3B7FC00B0DA01 /* PacmanSiren5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AF0295C19B3B7FC00B0DA01 /* PacmanSiren5.mp3 */; };
+		6AF0295F19B3B88500B0DA01 /* PacmanSiren6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AF0295E19B3B88500B0DA01 /* PacmanSiren6.mp3 */; };
+		6AF0296119B3B8FC00B0DA01 /* PacmanSiren7.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AF0296019B3B8FC00B0DA01 /* PacmanSiren7.mp3 */; };
+		6AF0296319B3B97100B0DA01 /* PacmanSiren8.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AF0296219B3B97100B0DA01 /* PacmanSiren8.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6AF028E119AE873900B0DA01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6AF028AC19AE873900B0DA01 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6AF028B319AE873900B0DA01;
+			remoteInfo = Pacman;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6A07CE0819B80610002A60A3 /* AOMovable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AOMovable.h; sourceTree = "<group>"; };
+		6A07CE0919B80610002A60A3 /* AOMovable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AOMovable.m; sourceTree = "<group>"; };
+		6A07CE0B19B80942002A60A3 /* AOGhostNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AOGhostNode.h; sourceTree = "<group>"; };
+		6A07CE0C19B80942002A60A3 /* AOGhostNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AOGhostNode.m; sourceTree = "<group>"; };
+		6AF028B419AE873900B0DA01 /* Pacman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pacman.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AF028B719AE873900B0DA01 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6AF028B919AE873900B0DA01 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6AF028BB19AE873900B0DA01 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6AF028BD19AE873900B0DA01 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		6AF028C119AE873900B0DA01 /* Pacman-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pacman-Info.plist"; sourceTree = "<group>"; };
+		6AF028C319AE873900B0DA01 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6AF028C519AE873900B0DA01 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6AF028C719AE873900B0DA01 /* Pacman-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pacman-Prefix.pch"; sourceTree = "<group>"; };
+		6AF028C819AE873900B0DA01 /* AOAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AOAppDelegate.h; sourceTree = "<group>"; };
+		6AF028C919AE873900B0DA01 /* AOAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AOAppDelegate.m; sourceTree = "<group>"; };
+		6AF028CC19AE873900B0DA01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6AF028CE19AE873900B0DA01 /* AOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AOViewController.h; sourceTree = "<group>"; };
+		6AF028CF19AE873900B0DA01 /* AOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AOViewController.m; sourceTree = "<group>"; };
+		6AF028D119AE873900B0DA01 /* AOMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AOMyScene.h; sourceTree = "<group>"; };
+		6AF028D219AE873900B0DA01 /* AOMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AOMyScene.m; sourceTree = "<group>"; };
+		6AF028D619AE873900B0DA01 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6AF028DC19AE873900B0DA01 /* PacmanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PacmanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AF028DD19AE873900B0DA01 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		6AF028E519AE873900B0DA01 /* PacmanTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PacmanTests-Info.plist"; sourceTree = "<group>"; };
+		6AF028E719AE873900B0DA01 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6AF028E919AE873900B0DA01 /* PacmanTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PacmanTests.m; sourceTree = "<group>"; };
+		6AF0293B19B2805E00B0DA01 /* AOControlNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AOControlNode.h; sourceTree = "<group>"; };
+		6AF0293C19B2805E00B0DA01 /* AOControlNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AOControlNode.m; sourceTree = "<group>"; };
+		6AF0293E19B28F4A00B0DA01 /* AOPacmanNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AOPacmanNode.h; sourceTree = "<group>"; };
+		6AF0293F19B28F4A00B0DA01 /* AOPacmanNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AOPacmanNode.m; sourceTree = "<group>"; };
+		6AF0294119B2938000B0DA01 /* AOLabyrinthNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AOLabyrinthNode.h; sourceTree = "<group>"; };
+		6AF0294219B2938000B0DA01 /* AOLabyrinthNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AOLabyrinthNode.m; sourceTree = "<group>"; };
+		6AF0294819B2BC9200B0DA01 /* pacman_chomp.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pacman_chomp.caf; sourceTree = "<group>"; };
+		6AF0294A19B3A91F00B0DA01 /* AOUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AOUtil.h; sourceTree = "<group>"; };
+		6AF0294B19B3A91F00B0DA01 /* AOUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AOUtil.m; sourceTree = "<group>"; };
+		6AF0294D19B3A9ED00B0DA01 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		6AF0294F19B3AD8E00B0DA01 /* pacman_chomp.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pacman_chomp.wav; sourceTree = "<group>"; };
+		6AF0295219B3B08F00B0DA01 /* Joystix.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = Joystix.TTF; sourceTree = "<group>"; };
+		6AF0295419B3B4E600B0DA01 /* PacmanSiren.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = PacmanSiren.mp3; sourceTree = "<group>"; };
+		6AF0295619B3B6B500B0DA01 /* PacmanSiren2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = PacmanSiren2.mp3; sourceTree = "<group>"; };
+		6AF0295819B3B72600B0DA01 /* PacmanSiren3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = PacmanSiren3.mp3; sourceTree = "<group>"; };
+		6AF0295A19B3B7A400B0DA01 /* PacmanSiren4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = PacmanSiren4.mp3; sourceTree = "<group>"; };
+		6AF0295C19B3B7FC00B0DA01 /* PacmanSiren5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = PacmanSiren5.mp3; sourceTree = "<group>"; };
+		6AF0295E19B3B88500B0DA01 /* PacmanSiren6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = PacmanSiren6.mp3; sourceTree = "<group>"; };
+		6AF0296019B3B8FC00B0DA01 /* PacmanSiren7.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = PacmanSiren7.mp3; sourceTree = "<group>"; };
+		6AF0296219B3B97100B0DA01 /* PacmanSiren8.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = PacmanSiren8.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6AF028B119AE873900B0DA01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AF0294E19B3A9ED00B0DA01 /* AVFoundation.framework in Frameworks */,
+				6AF028BA19AE873900B0DA01 /* CoreGraphics.framework in Frameworks */,
+				6AF028BC19AE873900B0DA01 /* UIKit.framework in Frameworks */,
+				6AF028BE19AE873900B0DA01 /* SpriteKit.framework in Frameworks */,
+				6AF028B819AE873900B0DA01 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AF028D919AE873900B0DA01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AF028DE19AE873900B0DA01 /* XCTest.framework in Frameworks */,
+				6AF028E019AE873900B0DA01 /* UIKit.framework in Frameworks */,
+				6AF028DF19AE873900B0DA01 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6AF028AB19AE873900B0DA01 = {
+			isa = PBXGroup;
+			children = (
+				6AF028BF19AE873900B0DA01 /* Pacman */,
+				6AF028E319AE873900B0DA01 /* PacmanTests */,
+				6AF028B619AE873900B0DA01 /* Frameworks */,
+				6AF028B519AE873900B0DA01 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6AF028B519AE873900B0DA01 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6AF028B419AE873900B0DA01 /* Pacman.app */,
+				6AF028DC19AE873900B0DA01 /* PacmanTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6AF028B619AE873900B0DA01 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6AF0294D19B3A9ED00B0DA01 /* AVFoundation.framework */,
+				6AF028B719AE873900B0DA01 /* Foundation.framework */,
+				6AF028B919AE873900B0DA01 /* CoreGraphics.framework */,
+				6AF028BB19AE873900B0DA01 /* UIKit.framework */,
+				6AF028BD19AE873900B0DA01 /* SpriteKit.framework */,
+				6AF028DD19AE873900B0DA01 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6AF028BF19AE873900B0DA01 /* Pacman */ = {
+			isa = PBXGroup;
+			children = (
+				6A07CE0B19B80942002A60A3 /* AOGhostNode.h */,
+				6A07CE0C19B80942002A60A3 /* AOGhostNode.m */,
+				6AF0294A19B3A91F00B0DA01 /* AOUtil.h */,
+				6AF0294B19B3A91F00B0DA01 /* AOUtil.m */,
+				6A07CE0819B80610002A60A3 /* AOMovable.h */,
+				6A07CE0919B80610002A60A3 /* AOMovable.m */,
+				6AF0294119B2938000B0DA01 /* AOLabyrinthNode.h */,
+				6AF0294219B2938000B0DA01 /* AOLabyrinthNode.m */,
+				6AF0293E19B28F4A00B0DA01 /* AOPacmanNode.h */,
+				6AF0293F19B28F4A00B0DA01 /* AOPacmanNode.m */,
+				6AF028D119AE873900B0DA01 /* AOMyScene.h */,
+				6AF028D219AE873900B0DA01 /* AOMyScene.m */,
+				6AF0295119B3B07700B0DA01 /* Fonts */,
+				6AF0294419B2BB8000B0DA01 /* Sounds */,
+				6AF028D619AE873900B0DA01 /* Images.xcassets */,
+				6AF028C019AE873900B0DA01 /* Supporting Files */,
+				6AF0293B19B2805E00B0DA01 /* AOControlNode.h */,
+				6AF0293C19B2805E00B0DA01 /* AOControlNode.m */,
+			);
+			path = Pacman;
+			sourceTree = "<group>";
+		};
+		6AF028C019AE873900B0DA01 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6AF028C819AE873900B0DA01 /* AOAppDelegate.h */,
+				6AF028C919AE873900B0DA01 /* AOAppDelegate.m */,
+				6AF028CB19AE873900B0DA01 /* Main.storyboard */,
+				6AF028CE19AE873900B0DA01 /* AOViewController.h */,
+				6AF028CF19AE873900B0DA01 /* AOViewController.m */,
+				6AF028C119AE873900B0DA01 /* Pacman-Info.plist */,
+				6AF028C219AE873900B0DA01 /* InfoPlist.strings */,
+				6AF028C519AE873900B0DA01 /* main.m */,
+				6AF028C719AE873900B0DA01 /* Pacman-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6AF028E319AE873900B0DA01 /* PacmanTests */ = {
+			isa = PBXGroup;
+			children = (
+				6AF028E919AE873900B0DA01 /* PacmanTests.m */,
+				6AF028E419AE873900B0DA01 /* Supporting Files */,
+			);
+			path = PacmanTests;
+			sourceTree = "<group>";
+		};
+		6AF028E419AE873900B0DA01 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6AF028E519AE873900B0DA01 /* PacmanTests-Info.plist */,
+				6AF028E619AE873900B0DA01 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6AF0294419B2BB8000B0DA01 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				6AF0296219B3B97100B0DA01 /* PacmanSiren8.mp3 */,
+				6AF0296019B3B8FC00B0DA01 /* PacmanSiren7.mp3 */,
+				6AF0295E19B3B88500B0DA01 /* PacmanSiren6.mp3 */,
+				6AF0295C19B3B7FC00B0DA01 /* PacmanSiren5.mp3 */,
+				6AF0295A19B3B7A400B0DA01 /* PacmanSiren4.mp3 */,
+				6AF0295819B3B72600B0DA01 /* PacmanSiren3.mp3 */,
+				6AF0295619B3B6B500B0DA01 /* PacmanSiren2.mp3 */,
+				6AF0295419B3B4E600B0DA01 /* PacmanSiren.mp3 */,
+				6AF0294F19B3AD8E00B0DA01 /* pacman_chomp.wav */,
+				6AF0294819B2BC9200B0DA01 /* pacman_chomp.caf */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
+		6AF0295119B3B07700B0DA01 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				6AF0295219B3B08F00B0DA01 /* Joystix.TTF */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6AF028B319AE873900B0DA01 /* Pacman */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AF028ED19AE873900B0DA01 /* Build configuration list for PBXNativeTarget "Pacman" */;
+			buildPhases = (
+				6AF028B019AE873900B0DA01 /* Sources */,
+				6AF028B119AE873900B0DA01 /* Frameworks */,
+				6AF028B219AE873900B0DA01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pacman;
+			productName = Pacman;
+			productReference = 6AF028B419AE873900B0DA01 /* Pacman.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6AF028DB19AE873900B0DA01 /* PacmanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AF028F019AE873900B0DA01 /* Build configuration list for PBXNativeTarget "PacmanTests" */;
+			buildPhases = (
+				6AF028D819AE873900B0DA01 /* Sources */,
+				6AF028D919AE873900B0DA01 /* Frameworks */,
+				6AF028DA19AE873900B0DA01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6AF028E219AE873900B0DA01 /* PBXTargetDependency */,
+			);
+			name = PacmanTests;
+			productName = PacmanTests;
+			productReference = 6AF028DC19AE873900B0DA01 /* PacmanTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6AF028AC19AE873900B0DA01 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AO;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Aldominium;
+				TargetAttributes = {
+					6AF028DB19AE873900B0DA01 = {
+						TestTargetID = 6AF028B319AE873900B0DA01;
+					};
+				};
+			};
+			buildConfigurationList = 6AF028AF19AE873900B0DA01 /* Build configuration list for PBXProject "Pacman" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6AF028AB19AE873900B0DA01;
+			productRefGroup = 6AF028B519AE873900B0DA01 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6AF028B319AE873900B0DA01 /* Pacman */,
+				6AF028DB19AE873900B0DA01 /* PacmanTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6AF028B219AE873900B0DA01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AF0295519B3B4E600B0DA01 /* PacmanSiren.mp3 in Resources */,
+				6AF0295D19B3B7FC00B0DA01 /* PacmanSiren5.mp3 in Resources */,
+				6AF028C419AE873900B0DA01 /* InfoPlist.strings in Resources */,
+				6AF0295719B3B6B500B0DA01 /* PacmanSiren2.mp3 in Resources */,
+				6AF0294919B2BC9200B0DA01 /* pacman_chomp.caf in Resources */,
+				6AF028D719AE873900B0DA01 /* Images.xcassets in Resources */,
+				6AF0295319B3B08F00B0DA01 /* Joystix.TTF in Resources */,
+				6AF0296319B3B97100B0DA01 /* PacmanSiren8.mp3 in Resources */,
+				6AF0295919B3B72600B0DA01 /* PacmanSiren3.mp3 in Resources */,
+				6AF0295B19B3B7A400B0DA01 /* PacmanSiren4.mp3 in Resources */,
+				6AF0295F19B3B88500B0DA01 /* PacmanSiren6.mp3 in Resources */,
+				6AF0295019B3AD8E00B0DA01 /* pacman_chomp.wav in Resources */,
+				6AF028CD19AE873900B0DA01 /* Main.storyboard in Resources */,
+				6AF0296119B3B8FC00B0DA01 /* PacmanSiren7.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AF028DA19AE873900B0DA01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AF028E819AE873900B0DA01 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6AF028B019AE873900B0DA01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A07CE0A19B80610002A60A3 /* AOMovable.m in Sources */,
+				6A07CE0D19B80942002A60A3 /* AOGhostNode.m in Sources */,
+				6AF028CA19AE873900B0DA01 /* AOAppDelegate.m in Sources */,
+				6AF0294C19B3A91F00B0DA01 /* AOUtil.m in Sources */,
+				6AF0294019B28F4A00B0DA01 /* AOPacmanNode.m in Sources */,
+				6AF0293D19B2805E00B0DA01 /* AOControlNode.m in Sources */,
+				6AF028D019AE873900B0DA01 /* AOViewController.m in Sources */,
+				6AF028D319AE873900B0DA01 /* AOMyScene.m in Sources */,
+				6AF0294319B2938000B0DA01 /* AOLabyrinthNode.m in Sources */,
+				6AF028C619AE873900B0DA01 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AF028D819AE873900B0DA01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AF028EA19AE873900B0DA01 /* PacmanTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6AF028E219AE873900B0DA01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6AF028B319AE873900B0DA01 /* Pacman */;
+			targetProxy = 6AF028E119AE873900B0DA01 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6AF028C219AE873900B0DA01 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6AF028C319AE873900B0DA01 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6AF028CB19AE873900B0DA01 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6AF028CC19AE873900B0DA01 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6AF028E619AE873900B0DA01 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6AF028E719AE873900B0DA01 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6AF028EB19AE873900B0DA01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6AF028EC19AE873900B0DA01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6AF028EE19AE873900B0DA01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pacman/Pacman-Prefix.pch";
+				INFOPLIST_FILE = "Pacman/Pacman-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6AF028EF19AE873900B0DA01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pacman/Pacman-Prefix.pch";
+				INFOPLIST_FILE = "Pacman/Pacman-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6AF028F119AE873900B0DA01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Pacman.app/Pacman";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pacman/Pacman-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PacmanTests/PacmanTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		6AF028F219AE873900B0DA01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Pacman.app/Pacman";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pacman/Pacman-Prefix.pch";
+				INFOPLIST_FILE = "PacmanTests/PacmanTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6AF028AF19AE873900B0DA01 /* Build configuration list for PBXProject "Pacman" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AF028EB19AE873900B0DA01 /* Debug */,
+				6AF028EC19AE873900B0DA01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AF028ED19AE873900B0DA01 /* Build configuration list for PBXNativeTarget "Pacman" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AF028EE19AE873900B0DA01 /* Debug */,
+				6AF028EF19AE873900B0DA01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AF028F019AE873900B0DA01 /* Build configuration list for PBXNativeTarget "PacmanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AF028F119AE873900B0DA01 /* Debug */,
+				6AF028F219AE873900B0DA01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6AF028AC19AE873900B0DA01 /* Project object */;
+}
